@@ -8,7 +8,7 @@
 import UIKit
 import SnapKit
 
-class ViewController: UIViewController {
+final class ViewController: UIViewController {
     
     // MARK: - UI Property
     
@@ -346,4 +346,9 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource, 
         return CGSize(width: (self.collectionView.frame.width - 40) / 5, height: (self.collectionView.frame.height - 10) / 2)
     }
     
+}
+
+#Preview {
+    let vc = ViewController(nibName: nil, bundle: nil)
+    return vc
 }
