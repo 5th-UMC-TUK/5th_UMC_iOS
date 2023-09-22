@@ -7,7 +7,7 @@
 
 import UIKit
 
-class SceneDelegate: UIResponder, UIWindowSceneDelegate {
+final class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
 
@@ -25,16 +25,15 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             item[0].title = "검색"
             
             item[1].image = UIImage(named: "a")?.resize(newWidth: 20).withRenderingMode(.alwaysOriginal)
-            item[1].title = "검색"
+            item[1].title = "찜"
             
             item[2].image = UIImage(named: "a")?.resize(newWidth: 20).withRenderingMode(.alwaysOriginal)
-            item[2].title = "검색"
             
             item[3].image = UIImage(named: "a")?.resize(newWidth: 20).withRenderingMode(.alwaysOriginal)
-            item[3].title = "검색"
+            item[3].title = "주문내역"
             
             item[4].image = UIImage(named: "a")?.resize(newWidth: 20).withRenderingMode(.alwaysOriginal)
-            item[4].title = "검색"
+            item[4].title = "my배민"
         }
         
         

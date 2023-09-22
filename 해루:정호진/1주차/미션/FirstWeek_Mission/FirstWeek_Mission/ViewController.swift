@@ -27,8 +27,9 @@ final class ViewController: UIViewController {
     /// MARK: 위에 녹색 부분 UIView
     private lazy var topUIView: TopUIView = {
         let view = TopUIView()
-        view.backgroundColor = .green
+        view.backgroundColor = UIColor(red: 79/255, green: 178/255, blue: 173/255, alpha: 0.8)
         view.layer.cornerRadius = 20
+        view.layer.maskedCorners = [.layerMinXMaxYCorner,.layerMaxXMaxYCorner]
         return view
     }()
     

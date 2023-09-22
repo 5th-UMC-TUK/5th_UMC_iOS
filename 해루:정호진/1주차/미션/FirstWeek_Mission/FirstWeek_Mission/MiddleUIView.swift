@@ -31,7 +31,7 @@ final class MiddleUIView: UIView {
     
     /// MARK:
     private lazy var image1: UIImageView = {
-        let view = UIImageView(image: UIImage(systemName: "greaterthan")?.withRenderingMode(.alwaysOriginal))
+        let view = UIImageView(image: UIImage(systemName: "greaterthan")?.resize(newWidth: 20))
         return view
     }()
     
