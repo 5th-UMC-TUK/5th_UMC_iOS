@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AutoLayout" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pencil" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="qYU-35-3yE">
+                                <rect key="frame" x="73.333333333333329" y="404" width="50" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="5LR-cr-m5Q"/>
+                                    <constraint firstAttribute="height" constant="50" id="SkJ-7r-geG"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pencil" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="B6F-11-x9f">
+                                <rect key="frame" x="171.66666666666666" y="191" width="50" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="URT-Dh-rM5"/>
+                                    <constraint firstAttribute="width" constant="50" id="c0Q-8V-Oku"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pencil" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="xjY-XM-qsX">
+                                <rect key="frame" x="269.66666666666669" y="404" width="50" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="ERw-UL-CNg"/>
+                                    <constraint firstAttribute="width" constant="50" id="F8H-Su-6pj"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pencil" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="7qU-fQ-L9h">
+                                <rect key="frame" x="171.66666666666666" y="617" width="50" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="6wd-Af-99x"/>
+                                    <constraint firstAttribute="width" constant="50" id="cCl-P5-HMM"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pencil" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="8gn-6W-yFj">
+                                <rect key="frame" x="171.66666666666666" y="404" width="50" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="QAQ-0W-Prh"/>
+                                    <constraint firstAttribute="width" constant="50" id="eaQ-hT-bou"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AutoLayout" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kat-Mj-uqB">
+                                <rect key="frame" x="102" y="59" width="189" height="42"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="7qU-fQ-L9h" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="1.5" id="DEv-g3-eF7"/>
+                            <constraint firstItem="xjY-XM-qsX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" multiplier="1.5" id="DhL-ks-a8K"/>
+                            <constraint firstItem="qYU-35-3yE" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="JCh-zk-GZf"/>
+                            <constraint firstItem="qYU-35-3yE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" multiplier="0.5" id="Kxv-0U-Yat"/>
+                            <constraint firstItem="8gn-6W-yFj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="WNY-tP-JKm"/>
+                            <constraint firstItem="kat-Mj-uqB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ZrN-Uy-5IW"/>
+                            <constraint firstItem="xjY-XM-qsX" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="bLe-TW-A9O"/>
+                            <constraint firstItem="8gn-6W-yFj" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="cVJ-3A-ayH"/>
+                            <constraint firstItem="kat-Mj-uqB" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="fh9-1F-sG6"/>
+                            <constraint firstItem="7qU-fQ-L9h" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="l3b-wB-9cG"/>
+                            <constraint firstItem="B6F-11-x9f" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="0.5" id="rWo-BV-fwd"/>
+                            <constraint firstItem="B6F-11-x9f" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vWk-AU-nSi"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.64122137404578" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="pencil" catalog="system" width="128" height="113"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
