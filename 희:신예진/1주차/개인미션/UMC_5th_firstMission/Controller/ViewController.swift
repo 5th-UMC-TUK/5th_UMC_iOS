@@ -14,15 +14,6 @@ final class ViewController: UIViewController {
     
     var topViewfourDataArray: [ShopItem] = []
     
-    
-//    private lazy var shopTableView : UITableView = {
-//        let tableView = UITableView()
-//        tableView.backgroundColor = UIColor.interSpaceColor
-//        tableView.separatorStyle = .none
-//        tableView.isScrollEnabled = false
-//        return tableView
-//    }()
-    
     //전체스크롤
     private lazy var scrollView: UIScrollView = {
         let scrollView = UIScrollView()
@@ -188,8 +179,6 @@ final class ViewController: UIViewController {
     
     private func setupViews(){
         topViewLastcollectionView.register(SecondCustomCollectionCell.self, forCellWithReuseIdentifier:SecondCustomCollectionCell.reuseIdentifier)
-        
-//        midView.addSubview(shopTableView)
     }
     
     
@@ -310,13 +299,6 @@ final class ViewController: UIViewController {
             make.leading.trailing.equalToSuperview()
             make.height.equalTo(view.snp.width).multipliedBy(1.7)
         }
-//        shopTableView.snp.makeConstraints { make in
-//            make.top.leading.trailing.equalToSuperview()
-//            make.width.equalToSuperview()
-//            make.bottom.equalTo(bottomView.snp.bottom)
-//
-//        }
-        
         
         stackView.snp.makeConstraints { make in
             make.top.equalTo(couponBannerView.snp.bottom).offset(30)
