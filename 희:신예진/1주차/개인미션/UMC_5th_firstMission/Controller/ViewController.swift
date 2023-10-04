@@ -81,6 +81,7 @@ final class ViewController: UIViewController {
         let view = UIImageView()
         view.image = UIImage(named: "couponBanner")
         view.layer.cornerRadius = 10
+        view.layer.masksToBounds = true
         view.layer.borderWidth = 1
         view.layer.borderColor = UIColor.lightGray.cgColor
         return view
@@ -284,14 +285,14 @@ final class ViewController: UIViewController {
             make.top.leading.trailing.equalToSuperview()
             make.bottom.equalTo(searchBar.snp.bottom).offset(10)
         }
-        
         couponBannerView.snp.makeConstraints { make in
             make.top.equalTo(searchBarContentView.snp.bottom).offset(10)
             make.leading.trailing.equalToSuperview()
+            make.height.equalTo(couponBannerView.snp.width).multipliedBy(0.22)
         }
 
         couponBanner.snp.makeConstraints { make in
-            make.top.leading.trailing.equalToSuperview().inset(30)
+            make.edges.equalToSuperview().inset(10)
         }
         
         topView.snp.makeConstraints { make in
