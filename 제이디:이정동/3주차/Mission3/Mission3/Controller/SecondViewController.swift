@@ -32,10 +32,20 @@ class SecondViewController: UIViewController {
         return iv
     }()
     
+    private lazy var stackView: UIStackView = {
+        let sv = UIStackView()
+        sv.axis = .vertical
+        sv.distribution = .fill
+        sv.alignment = .fill
+        sv.spacing = 3
+        return sv
+    }()
+    
     private lazy var priceLabel: UILabel = {
         let label = UILabel()
         label.font = .systemFont(ofSize: 15, weight: .medium)
         label.textColor = .gray
+        label.numberOfLines = 0
         return label
     }()
     
@@ -43,6 +53,15 @@ class SecondViewController: UIViewController {
         let label = UILabel()
         label.font = .systemFont(ofSize: 15, weight: .medium)
         label.textColor = .gray
+        label.numberOfLines = 0
+        return label
+    }()
+    
+    private lazy var sideLabel: UILabel = {
+        let label = UILabel()
+        label.font = .systemFont(ofSize: 15, weight: .medium)
+        label.textColor = .gray
+        label.numberOfLines = 0
         return label
     }()
     
@@ -61,12 +80,6 @@ class SecondViewController: UIViewController {
         return view
     }()
     
-    var totalPrice: Int?
-    var priceOption: String?
-    var price: String?
-    var doughOption: String?
-    var doughPrice: String?
-
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -76,6 +89,7 @@ class SecondViewController: UIViewController {
         
         addSubviews()
         configureConstraints()
+        
         updateView()
     }
     
@@ -85,8 +99,13 @@ class SecondViewController: UIViewController {
         view.addSubview(topLabel)
         view.addSubview(titleLabel)
         view.addSubview(imageView)
-        view.addSubview(priceLabel)
-        view.addSubview(doughLabel)
+        
+        view.addSubview(stackView)
+        
+        stackView.addArrangedSubview(priceLabel)
+        stackView.addArrangedSubview(doughLabel)
+        stackView.addArrangedSubview(sideLabel)
+        
         view.addSubview(totalPriceLabel)
         view.addSubview(bottomButton)
     }
@@ -109,18 +128,14 @@ class SecondViewController: UIViewController {
             make.size.equalTo(50)
         }
         
-        priceLabel.snp.makeConstraints { make in
+        stackView.snp.makeConstraints { make in
             make.top.equalTo(imageView.snp.top)
             make.leading.equalTo(imageView.snp.trailing).offset(10)
-        }
-        
-        doughLabel.snp.makeConstraints { make in
-            make.top.equalTo(priceLabel.snp.bottom).offset(5)
-            make.leading.equalTo(priceLabel.snp.leading)
+            make.trailing.equalToSuperview().inset(50)
         }
         
         totalPriceLabel.snp.makeConstraints { make in
-            make.top.equalTo(doughLabel.snp.bottom).offset(10)
+            make.top.equalTo(stackView.snp.bottom).offset(10)
             make.leading.equalTo(doughLabel.snp.leading)
         }
         
@@ -131,10 +146,27 @@ class SecondViewController: UIViewController {
         }
     }
 
-    private func updateView() {
-        bottomButton.setTitle("\(totalPrice!)원 주문하기", for: .normal)
-        totalPriceLabel.text = "\(totalPrice!)원"
-        priceLabel.text = "가격 : \(priceOption!) (\(price!))"
-        doughLabel.text = "도우 : \(doughOption!) (\(doughPrice!))"
+    func updateView() {
+        
+        let size = Cart.shared.size
+        priceLabel.text = "가격 : \(size.title) (\(size.price)원)"
+        
+        if let dough = Cart.shared.dough {
+            doughLabel.text = "도우 : \(dough.title) (\(dough.price)원)"
+        } else {
+            doughLabel.isHidden = true
+        }
+        
+        if Cart.shared.side.isEmpty { sideLabel.isHidden = true }
+        else {
+            var text = "사이드 :"
+            for op in Cart.shared.side {
+                text.append(" \(op.title) (\(op.price)원),")
+            }
+            text.removeLast()
+            sideLabel.text = text
+        }
+        
+        totalPriceLabel.text = "\(Cart.shared.totalPrice)원"
     }
 }
