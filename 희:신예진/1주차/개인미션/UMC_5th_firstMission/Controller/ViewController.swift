@@ -14,15 +14,6 @@ final class ViewController: UIViewController {
     
     var topViewfourDataArray: [ShopItem] = []
     
-    
-//    private lazy var shopTableView : UITableView = {
-//        let tableView = UITableView()
-//        tableView.backgroundColor = UIColor.interSpaceColor
-//        tableView.separatorStyle = .none
-//        tableView.isScrollEnabled = false
-//        return tableView
-//    }()
-    
     //전체스크롤
     private lazy var scrollView: UIScrollView = {
         let scrollView = UIScrollView()
@@ -81,6 +72,7 @@ final class ViewController: UIViewController {
         let view = UIImageView()
         view.image = UIImage(named: "couponBanner")
         view.layer.cornerRadius = 10
+        view.layer.masksToBounds = true
         view.layer.borderWidth = 1
         view.layer.borderColor = UIColor.lightGray.cgColor
         return view
@@ -187,8 +179,6 @@ final class ViewController: UIViewController {
     
     private func setupViews(){
         topViewLastcollectionView.register(SecondCustomCollectionCell.self, forCellWithReuseIdentifier:SecondCustomCollectionCell.reuseIdentifier)
-        
-//        midView.addSubview(shopTableView)
     }
     
     
@@ -284,14 +274,14 @@ final class ViewController: UIViewController {
             make.top.leading.trailing.equalToSuperview()
             make.bottom.equalTo(searchBar.snp.bottom).offset(10)
         }
-        
         couponBannerView.snp.makeConstraints { make in
             make.top.equalTo(searchBarContentView.snp.bottom).offset(10)
             make.leading.trailing.equalToSuperview()
+            make.height.equalTo(couponBannerView.snp.width).multipliedBy(0.22)
         }
 
         couponBanner.snp.makeConstraints { make in
-            make.top.leading.trailing.equalToSuperview().inset(30)
+            make.edges.equalToSuperview().inset(10)
         }
         
         topView.snp.makeConstraints { make in
@@ -309,13 +299,6 @@ final class ViewController: UIViewController {
             make.leading.trailing.equalToSuperview()
             make.height.equalTo(view.snp.width).multipliedBy(1.7)
         }
-//        shopTableView.snp.makeConstraints { make in
-//            make.top.leading.trailing.equalToSuperview()
-//            make.width.equalToSuperview()
-//            make.bottom.equalTo(bottomView.snp.bottom)
-//
-//        }
-        
         
         stackView.snp.makeConstraints { make in
             make.top.equalTo(couponBannerView.snp.bottom).offset(30)

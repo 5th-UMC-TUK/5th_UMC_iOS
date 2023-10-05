@@ -21,7 +21,6 @@ class BannerViewController: UIViewController {
         scrollView.showsHorizontalScrollIndicator = false
         scrollView.isUserInteractionEnabled = false
         
-        
         return scrollView
     }()
     
@@ -33,15 +32,10 @@ class BannerViewController: UIViewController {
         
         view.backgroundColor = .clear
         
-        
-        
         addSubviews()
  
-        
         scrollView.contentSize = CGSize(width: CGFloat(images.count + 1) * view.frame.width, height: view.frame.width*0.3)
         startSlider()
-        
-        
     }
     
     private func addSubviews() {
