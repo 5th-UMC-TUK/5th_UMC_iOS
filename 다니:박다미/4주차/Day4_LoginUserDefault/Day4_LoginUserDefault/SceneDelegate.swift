@@ -1,6 +1,6 @@
 //
 //  SceneDelegate.swift
-//  Day3_Study
+//  Day4_LoginUserDefault
 //
 //  Created by 박다미 on 2023/10/08.
 //
@@ -10,18 +10,18 @@ import UIKit
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
+    var navigationController = UINavigationController()
 
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
+       
         guard let windowScene = (scene as? UIWindowScene) else { return }
-        self.window = UIWindow(windowScene: windowScene)
-        let rootViewController = ViewController()
-                window?.rootViewController = rootViewController
-
-        //화면 보이게 윈도우 키 윈도우 설정
+      
+        navigationController.viewControllers = [ViewController()]
+        window = UIWindow(windowScene: windowScene)
+        window?.rootViewController = navigationController
         window?.makeKeyAndVisible()
     }
-
 
     func sceneDidDisconnect(_ scene: UIScene) {
         // Called as the scene is being released by the system.
