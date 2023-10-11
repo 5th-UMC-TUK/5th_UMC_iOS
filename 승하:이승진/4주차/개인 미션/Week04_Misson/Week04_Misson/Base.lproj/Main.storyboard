@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Week04_Misson" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aa4-8E-9aW">
+                                <rect key="frame" x="0.0" y="59" width="393" height="50"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="광명동" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k7n-m0-UtC">
+                                        <rect key="frame" x="15.000000000000004" y="14.999999999999998" width="44.333333333333343" height="20.333333333333329"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WyX-Sd-eQ7">
+                                        <rect key="frame" x="351" y="9" width="32" height="32"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="32" id="EcC-b0-qee"/>
+                                            <constraint firstAttribute="width" constant="32" id="Yyq-qe-o5l"/>
+                                        </constraints>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" image="bell" catalog="system"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pf8-IE-lpn">
+                                        <rect key="frame" x="304" y="9" width="32" height="32"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="32" id="YhW-8f-Tp2"/>
+                                            <constraint firstAttribute="width" constant="32" id="mNf-h5-qCH"/>
+                                        </constraints>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" image="magnifyingglass" catalog="system"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yyf-Rf-Enm">
+                                        <rect key="frame" x="257" y="9" width="32" height="32"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="32" id="IGi-kR-riE"/>
+                                            <constraint firstAttribute="height" constant="32" id="lUJ-mf-nVn"/>
+                                        </constraints>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" image="list.bullet" catalog="system"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fhd-vK-FXK">
+                                        <rect key="frame" x="64.333333333333329" y="12.666666666666671" width="25" height="25"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="25" id="G6d-yj-quj"/>
+                                            <constraint firstAttribute="height" constant="25" id="qZb-dW-Fer"/>
+                                        </constraints>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" image="chevron.down" catalog="system"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="WyX-Sd-eQ7" secondAttribute="trailing" constant="10" id="4kR-Qe-C7V"/>
+                                    <constraint firstItem="WyX-Sd-eQ7" firstAttribute="centerY" secondItem="aa4-8E-9aW" secondAttribute="centerY" id="I69-pY-GvF"/>
+                                    <constraint firstItem="fhd-vK-FXK" firstAttribute="centerY" secondItem="k7n-m0-UtC" secondAttribute="centerY" id="VB8-ft-Vf8"/>
+                                    <constraint firstItem="k7n-m0-UtC" firstAttribute="leading" secondItem="aa4-8E-9aW" secondAttribute="leading" constant="15" id="ZWI-3x-AhI"/>
+                                    <constraint firstItem="pf8-IE-lpn" firstAttribute="leading" secondItem="Yyf-Rf-Enm" secondAttribute="trailing" constant="15" id="bHZ-De-Tzc"/>
+                                    <constraint firstItem="fhd-vK-FXK" firstAttribute="leading" secondItem="k7n-m0-UtC" secondAttribute="trailing" constant="5" id="d2E-X2-u9A"/>
+                                    <constraint firstItem="Yyf-Rf-Enm" firstAttribute="centerY" secondItem="aa4-8E-9aW" secondAttribute="centerY" id="dov-Vh-I7e"/>
+                                    <constraint firstItem="pf8-IE-lpn" firstAttribute="centerY" secondItem="aa4-8E-9aW" secondAttribute="centerY" id="hVz-zo-sMC"/>
+                                    <constraint firstItem="k7n-m0-UtC" firstAttribute="centerY" secondItem="aa4-8E-9aW" secondAttribute="centerY" id="rwM-i0-FQr"/>
+                                    <constraint firstAttribute="height" constant="50" id="utB-oB-dpn"/>
+                                    <constraint firstItem="WyX-Sd-eQ7" firstAttribute="leading" secondItem="pf8-IE-lpn" secondAttribute="trailing" constant="15" id="yEJ-nD-akm"/>
+                                </constraints>
+                            </view>
+                            <tabBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fW8-g3-Ijd">
+                                <rect key="frame" x="0.0" y="769" width="393" height="83"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <items>
+                                    <tabBarItem title="홈" image="house" catalog="system" selectedImage="house.fill" id="MXu-h4-wxb">
+                                        <color key="badgeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </tabBarItem>
+                                    <tabBarItem title="동네생활" image="doc.on.doc" catalog="system" selectedImage="doc.on.doc.fill" id="7PA-kV-Vvk">
+                                        <color key="badgeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </tabBarItem>
+                                    <tabBarItem title="내 근처" image="person.wave.2" catalog="system" selectedImage="person.wave.2.fill" id="zlr-wM-kN6">
+                                        <color key="badgeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </tabBarItem>
+                                    <tabBarItem title="채팅" image="message" catalog="system" selectedImage="message.fill" id="11N-Kk-C3d">
+                                        <color key="badgeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </tabBarItem>
+                                    <tabBarItem title="나의 당근" image="person" catalog="system" selectedImage="person.fill" id="chd-JC-kjm">
+                                        <color key="badgeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </tabBarItem>
+                                </items>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="selectedImageTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tabBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="AAd-9m-ehp">
+                                <rect key="frame" x="0.0" y="109" width="393" height="660"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qmu-7r-CDI">
+                                <rect key="frame" x="313" y="689" width="60" height="60"/>
+                                <color key="backgroundColor" red="0.92549020049999997" green="0.47058826679999999" blue="0.20000001789999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="10e-Lv-rY8"/>
+                                    <constraint firstAttribute="width" constant="60" id="Xya-k4-L1c"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="plus" catalog="system"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="fW8-g3-Ijd" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="205-Lh-Rej"/>
+                            <constraint firstItem="fW8-g3-Ijd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="5ic-HO-KEz"/>
+                            <constraint firstItem="AAd-9m-ehp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="99h-aG-xWI"/>
+                            <constraint firstItem="aa4-8E-9aW" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="DqH-8x-csy"/>
+                            <constraint firstItem="fW8-g3-Ijd" firstAttribute="top" secondItem="qmu-7r-CDI" secondAttribute="bottom" constant="20" id="NZD-jG-2gl"/>
+                            <constraint firstItem="aa4-8E-9aW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="QrH-e0-uJC"/>
+                            <constraint firstItem="AAd-9m-ehp" firstAttribute="top" secondItem="aa4-8E-9aW" secondAttribute="bottom" id="YwH-7G-x4X"/>
+                            <constraint firstItem="fW8-g3-Ijd" firstAttribute="top" secondItem="AAd-9m-ehp" secondAttribute="bottom" id="ZQQ-sd-21f"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qmu-7r-CDI" secondAttribute="trailing" constant="20" id="aRV-kJ-SVe"/>
+                            <constraint firstItem="aa4-8E-9aW" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="jca-Xl-EPi"/>
+                            <constraint firstItem="AAd-9m-ehp" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="yNN-Ki-w75"/>
+                            <constraint firstAttribute="bottom" secondItem="fW8-g3-Ijd" secondAttribute="bottom" id="ytv-7b-bDQ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="floatingButton" destination="qmu-7r-CDI" id="cUk-9a-6d3"/>
+                        <outlet property="tableView" destination="AAd-9m-ehp" id="W3P-S5-TSF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="43.511450381679388" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bell" catalog="system" width="125" height="128"/>
+        <image name="chevron.down" catalog="system" width="128" height="70"/>
+        <image name="doc.on.doc" catalog="system" width="116" height="128"/>
+        <image name="doc.on.doc.fill" catalog="system" width="116" height="128"/>
+        <image name="house" catalog="system" width="128" height="104"/>
+        <image name="house.fill" catalog="system" width="128" height="104"/>
+        <image name="list.bullet" catalog="system" width="128" height="87"/>
+        <image name="magnifyingglass" catalog="system" width="128" height="117"/>
+        <image name="message" catalog="system" width="128" height="116"/>
+        <image name="message.fill" catalog="system" width="128" height="114"/>
+        <image name="person" catalog="system" width="128" height="121"/>
+        <image name="person.fill" catalog="system" width="128" height="120"/>
+        <image name="person.wave.2" catalog="system" width="128" height="118"/>
+        <image name="person.wave.2.fill" catalog="system" width="128" height="119"/>
+        <image name="plus" catalog="system" width="128" height="113"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
