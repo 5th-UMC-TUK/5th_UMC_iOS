@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="179" id="KGk-i7-Jjw" customClass="VerticalTableViewCell" customModule="Week04_Misson" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="402" height="179"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="402" height="179"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AirPodsMaxImage" translatesAutoresizingMaskIntoConstraints="NO" id="coV-Zo-i05">
+                        <rect key="frame" x="10" y="10" width="130" height="130"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="coV-Zo-i05" secondAttribute="height" multiplier="1:1" id="34m-Sn-v6k"/>
+                            <constraint firstAttribute="width" constant="130" id="H51-Ug-nbS"/>
+                            <constraint firstAttribute="height" constant="130" id="zhf-wW-WmK"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="에어팟맥스 스페이스그레이  (미개봉)" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EZg-aS-uhx">
+                        <rect key="frame" x="150" y="18" width="196" height="43"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="서울특별시 구로구 - 5시간 전" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="37w-dD-1ab">
+                        <rect key="frame" x="150" y="76" width="174.66666666666663" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="600, 000원" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ye7-qp-v6M">
+                        <rect key="frame" x="150" y="104" width="90.666666666666686" height="20.333333333333329"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Xd-Gt-K2p">
+                        <rect key="frame" x="300" y="134" width="17" height="17"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="17" id="1QN-5Y-JxF"/>
+                            <constraint firstAttribute="width" constant="17" id="Vxs-w9-JDC"/>
+                        </constraints>
+                        <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        <state key="normal" image="message" catalog="system"/>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="21" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5lW-rC-Wey">
+                        <rect key="frame" x="322" y="133.66666666666666" width="15.666666666666686" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H5m-93-X9Y">
+                        <rect key="frame" x="345.66666666666669" y="134" width="20" height="17"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="6Au-l5-LZU"/>
+                            <constraint firstAttribute="height" constant="17" id="Sbp-88-VLf"/>
+                        </constraints>
+                        <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        <state key="normal" image="heart" catalog="system"/>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="34" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Yb-KI-sIb">
+                        <rect key="frame" x="370.66666666666669" y="133.66666666666666" width="19" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="9Yb-KI-sIb" firstAttribute="leading" secondItem="H5m-93-X9Y" secondAttribute="trailing" constant="5" id="01U-Ai-mUg"/>
+                    <constraint firstItem="5Xd-Gt-K2p" firstAttribute="top" secondItem="37w-dD-1ab" secondAttribute="bottom" constant="40" id="0Y9-R3-NFW"/>
+                    <constraint firstItem="ye7-qp-v6M" firstAttribute="leading" secondItem="EZg-aS-uhx" secondAttribute="leading" id="3aJ-Dc-ZvT"/>
+                    <constraint firstItem="H5m-93-X9Y" firstAttribute="centerY" secondItem="5Xd-Gt-K2p" secondAttribute="centerY" id="Aq0-1g-qjT"/>
+                    <constraint firstItem="9Yb-KI-sIb" firstAttribute="centerY" secondItem="5Xd-Gt-K2p" secondAttribute="centerY" id="ErH-Df-B3q"/>
+                    <constraint firstItem="37w-dD-1ab" firstAttribute="leading" secondItem="EZg-aS-uhx" secondAttribute="leading" id="Ggk-pU-1ey"/>
+                    <constraint firstItem="EZg-aS-uhx" firstAttribute="leading" secondItem="coV-Zo-i05" secondAttribute="trailing" constant="10" id="KYO-wn-Gbk"/>
+                    <constraint firstItem="5Xd-Gt-K2p" firstAttribute="leading" secondItem="coV-Zo-i05" secondAttribute="trailing" constant="160" id="Ojb-Y3-fts"/>
+                    <constraint firstItem="H5m-93-X9Y" firstAttribute="leading" secondItem="5lW-rC-Wey" secondAttribute="trailing" constant="8" id="Rpd-dp-e64"/>
+                    <constraint firstItem="37w-dD-1ab" firstAttribute="top" secondItem="EZg-aS-uhx" secondAttribute="bottom" constant="15" id="Vlt-FT-U9P"/>
+                    <constraint firstItem="5lW-rC-Wey" firstAttribute="centerY" secondItem="5Xd-Gt-K2p" secondAttribute="centerY" id="cg0-6y-Okj"/>
+                    <constraint firstItem="coV-Zo-i05" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="cxA-lh-L2y"/>
+                    <constraint firstItem="coV-Zo-i05" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="jc4-up-I3u"/>
+                    <constraint firstItem="5lW-rC-Wey" firstAttribute="leading" secondItem="5Xd-Gt-K2p" secondAttribute="trailing" constant="5" id="nNR-ZK-iUb"/>
+                    <constraint firstItem="ye7-qp-v6M" firstAttribute="top" secondItem="37w-dD-1ab" secondAttribute="bottom" constant="10" id="nkC-8V-E8J"/>
+                    <constraint firstItem="EZg-aS-uhx" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="18" id="ptl-lu-ctH"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="productImageView" destination="coV-Zo-i05" id="ao9-wh-hCS"/>
+                <outlet property="productName" destination="EZg-aS-uhx" id="0cU-10-qHn"/>
+                <outlet property="productPlace" destination="37w-dD-1ab" id="9bg-fa-fOe"/>
+                <outlet property="productPrice" destination="ye7-qp-v6M" id="g1a-f5-0qf"/>
+            </connections>
+            <point key="canvasLocation" x="189.31297709923663" y="67.25352112676056"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="AirPodsMaxImage" width="300" height="300"/>
+        <image name="heart" catalog="system" width="128" height="107"/>
+        <image name="message" catalog="system" width="128" height="116"/>
+    </resources>
+</document>
