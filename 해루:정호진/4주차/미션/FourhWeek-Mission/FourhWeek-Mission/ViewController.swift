@@ -157,6 +157,9 @@ final class ViewController: UIViewController {
         
         if saveId == id.value && savePw == pw.value {
             alert(title: "로그인 성공", message: nil)
+            let successLoginViewController = SuccessLoginViewController()
+            successLoginViewController.modalPresentationStyle = .fullScreen
+            present(successLoginViewController,animated: true)
         }
         else{
             alert(title: "로그인 실패", message: "Id, 비밀번호를 확인해 주세요")
