@@ -31,9 +31,12 @@ class ViewController: UIViewController {
         
         tableView.delegate = self
         tableView.dataSource = self
+        
+        // "VericalTableViewCell" 등록하기
         let verticalNib = UINib(nibName: "VerticalTableViewCell", bundle: nil)
         tableView.register(verticalNib, forCellReuseIdentifier: "VerticalTableViewCell")
         
+        // "HorizontalTableViewCell" 등록하기
         let horizontalNib = UINib(nibName: "HorizontalTableViewCell", bundle: nil)
         tableView.register(horizontalNib, forCellReuseIdentifier: "HorizontalTableViewCell")
         
@@ -47,7 +50,7 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        if indexPath.row == 1 {
+        if indexPath.row == 1 { // 중간 행에 넣기 위해서 1로 설정
             guard let cell = tableView.dequeueReusableCell(withIdentifier: "HorizontalTableViewCell", for: indexPath) as? HorizontalTableViewCell else {
                 return UITableViewCell()
             }
@@ -58,6 +61,7 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
             }
             cell.selectionStyle = .none
             
+            // image와 text 차례대로 넣기
             cell.productImageView.image = productImage[indexPath.row]
             cell.productName.text = productName[indexPath.row]
             cell.productPlace.text = productPlace[indexPath.row]
@@ -101,6 +105,6 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource, 
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: 150, height: 250)
+        return CGSize(width: 150, height: 250) // CollectionView는 width와 height 설정이 필요함
     }
 }
