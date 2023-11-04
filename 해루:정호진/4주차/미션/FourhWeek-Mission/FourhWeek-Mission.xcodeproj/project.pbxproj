@@ -22,6 +22,7 @@
 		3BB0741F2AD1A0A5007D50DF /* RxRelay-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 3BB0741E2AD1A0A5007D50DF /* RxRelay-Dynamic */; };
 		3BB074212AD1A0A5007D50DF /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 3BB074202AD1A0A5007D50DF /* RxSwift */; };
 		3BB074232AD1A0A5007D50DF /* RxSwift-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 3BB074222AD1A0A5007D50DF /* RxSwift-Dynamic */; };
+		3BE034902AD7F2EC00953498 /* SuccessLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE0348F2AD7F2EC00953498 /* SuccessLoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		3BB074082AD16B92007D50DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3BB0740A2AD16B92007D50DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3BB074102AD16C0B007D50DF /* UserDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefault.swift; sourceTree = "<group>"; };
+		3BE0348F2AD7F2EC00953498 /* SuccessLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessLoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 				3BB073FC2AD16B91007D50DF /* AppDelegate.swift */,
 				3BB073FE2AD16B91007D50DF /* SceneDelegate.swift */,
 				3BB074002AD16B91007D50DF /* ViewController.swift */,
+				3BE0348F2AD7F2EC00953498 /* SuccessLoginViewController.swift */,
 				3BB074102AD16C0B007D50DF /* UserDefault.swift */,
 				3BB074022AD16B91007D50DF /* Main.storyboard */,
 				3BB074052AD16B92007D50DF /* Assets.xcassets */,
@@ -174,6 +177,7 @@
 				3BB074112AD16C0B007D50DF /* UserDefault.swift in Sources */,
 				3BB074012AD16B91007D50DF /* ViewController.swift in Sources */,
 				3BB073FD2AD16B91007D50DF /* AppDelegate.swift in Sources */,
+				3BE034902AD7F2EC00953498 /* SuccessLoginViewController.swift in Sources */,
 				3BB073FF2AD16B91007D50DF /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

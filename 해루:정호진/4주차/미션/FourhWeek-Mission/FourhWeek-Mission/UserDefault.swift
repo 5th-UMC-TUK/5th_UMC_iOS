@@ -29,7 +29,7 @@ final class UserDefault {
     
     /// MARK: 아이디 불러옴
     func load(type: String) -> String {
-        return UserDefaults.standard.string(forKey: type) ?? "None"
+        return UserDefaults.standard.string(forKey: type) ?? ""
     }
     
 }
