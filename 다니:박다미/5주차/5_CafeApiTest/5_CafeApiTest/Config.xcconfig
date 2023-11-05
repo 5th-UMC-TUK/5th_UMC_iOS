@@ -1,0 +1,12 @@
+//
+//  Config.xcconfig
+//  5_CafeApiTest
+//
+//  Created by 박다미 on 2023/11/01.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+KAKAO_NATIVE_APP_KEY = 340a380a695cd47cf2cf4fcdd208e4a6
+API_KEY = uL5GlMl3Bt0TwRsuHlaueCm7e3p6ZXEOhv5pVjn5IL0iodN4fYq0dITDGSoXAlchBoHDEkiASQTF4GaU9C86gQ==
