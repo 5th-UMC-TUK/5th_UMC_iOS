@@ -10,14 +10,20 @@ import UIKit
 
 
 struct imageType {
-    static let 가위 = UIImage(named: "가위")
-    static let 바위 = UIImage(named: "바위")
-    static let 보 = UIImage(named: "보")
+    static let 가위 = UIImage(named: RockScissorPaper.가위.rawValue)
+    static let 바위 = UIImage(named: RockScissorPaper.바위.rawValue)
+    static let 보 = UIImage(named: RockScissorPaper.보.rawValue)
 }
 
 /// Index로 사용할 enum
 enum type: Int {
-    case 가위 = 0
+    case 가위
+    case 바위
+    case 보
+}
+
+enum RockScissorPaper: String {
+    case 가위
     case 바위
     case 보
 }

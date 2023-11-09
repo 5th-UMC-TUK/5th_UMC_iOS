@@ -174,23 +174,23 @@ final class ViewController: UIViewController {
         
         if selectedImageIndex == robotImageIndex {
             resultLabel.text = "무승부"
+            return
         }
         else if selectedImageIndex < robotImageIndex {
             if selectedImageIndex == 0 && robotImageIndex == 2 {
                 resultLabel.text = "승리"
+                return
             }
-            else{
-                resultLabel.text = "이걸 진다고?"
-            }
+            resultLabel.text = "이걸 진다고?"
+            return
         }
-        else{
-            if selectedImageIndex == 2 && robotImageIndex == 0 {
-                resultLabel.text = "이걸 진다고?"
-            }
-            else{
-                resultLabel.text = "승리"
-            }
+        if selectedImageIndex == 2 && robotImageIndex == 0 {
+            resultLabel.text = "이걸 진다고?"
+            return
         }
+        resultLabel.text = "승리"
+        return
+        
     }
 }
 
