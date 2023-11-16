@@ -15,7 +15,7 @@ class SecondViewController: UIViewController {
                               AnimationType.zoom(scale: 0.8)]
     
     override func viewDidLoad() {
-        super.viewDidLoad()
+        super.viewDidLoad() 
         
         self.tableView.dataSource = self
         self.tableView.delegate = self
