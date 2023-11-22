@@ -7,7 +7,7 @@
 
 import Foundation
 
-class OrderViewModel: ObservableObject {
+final class OrderViewModel: ObservableObject {
     @Published var radioMenus: [RadioMenu] = []
     @Published var menus: [Menu] = []
     
@@ -29,6 +29,7 @@ class OrderViewModel: ObservableObject {
         totalPriceHistory = []
         totalCountHistory = []
         updateTotals()
+        
         //더미
         radioMenus = RadioMenu.dummyData
         menus = Menu.dummyData
