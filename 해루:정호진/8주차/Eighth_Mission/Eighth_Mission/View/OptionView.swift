@@ -10,7 +10,7 @@ import SwiftUI
 struct OptionView: View {
     @Binding var optionList: [Option]
     @State var viewModel: ViewModel
-    @State var selection: Set<Option>
+    @State var selection: [Option]
     
     var body: some View {
         VStack {
@@ -52,15 +52,20 @@ extension OptionView {
             }
         })
         .onTapGesture {
+            
             if selection.contains(item) {
-                selection.remove(item)
+                selection.remove(at: selection.firstIndex(of: item) ?? 0)
                 viewModel.totalMoney -= item.price
             } else {
-                selection.insert(item)
+                selection.append(item)
                 viewModel.totalMoney += item.price
             }
             
-            print(selection)
+            if viewModel.checkOptions.contains(item) {
+                viewModel.checkOptions.remove(at: viewModel.checkOptions.firstIndex(of: item) ?? 0)
+            } else {
+                viewModel.checkOptions.append(item)
+            }
         }
     }
 }

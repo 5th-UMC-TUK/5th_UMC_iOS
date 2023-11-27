@@ -8,8 +8,8 @@
 import SwiftUI
 
 struct CartView: View {
-    @State var options: [Option]
-    @State var price: Price?
+    @Binding var options: [Option]
+    @State var price: Price
     @State var total: Int
     
     var body: some View {
@@ -28,13 +28,16 @@ struct CartView: View {
                         .frame(width: 100,height: 100)
                     
                     VStack(alignment: .leading) {
-                        Text("가격: \(price?.size ?? "") (\(price?.price ?? 0))")
+                        Text("가격: \(price.size) (\(price.price))")
+                     
                         ForEach(options) { option in
                             Text("소스: \(option.title) (\(option.price))")
                         }
+                        
                         Text("\(total)원")
                             .font(.headline)
                     }
+        
                     Spacer()
                 }
                 .padding(EdgeInsets(top: 0, leading: 10, bottom: 0, trailing: 0))
@@ -47,11 +50,4 @@ struct CartView: View {
             Text("총 금액: \(total) 원")
         }
     }
-}
-
-#Preview {
-    CartView(options: [Option(title: "꿀", price: 8000),
-                       Option(title: "꿀", price: 8000)],
-             price: Price(size: "L", price: 30000),
-             total: 10000)
 }

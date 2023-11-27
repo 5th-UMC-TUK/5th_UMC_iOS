@@ -18,13 +18,12 @@ final class ViewModel: ObservableObject {
                                   Option(title: "칠리", price: 3000),
                                   Option(title: "마요네즈", price: 2000)]
     
-    @Published var itemSize: Price? {
-        didSet {
-            objectWillChange.send()
-        }
-    }
+    @Published var itemSize: Price?
     
-    @Published var checkOptions = Set<Option>()
+    
+    @Published var checkOptions = [Option]()
+
+    @Published var sendOptions = [Option]()
     
     @Published var totalMoney: Int = 0 {
         didSet {
@@ -32,11 +31,13 @@ final class ViewModel: ObservableObject {
         }
     }
     
-    func calculate() {
-        let sizePrice = priceList.filter{$0 == itemSize}.first?.price ?? 0
-        var optionPrice = 0
-        _ = checkOptions.map{ optionPrice += $0.price }
-        totalMoney = sizePrice + optionPrice
+    func sendData() -> [Option] {
+        var list = [Option]()
+        _ = checkOptions.map { option in
+            list.append(option)
+        }
+        print("list \(list)")
+        return list
     }
     
 }

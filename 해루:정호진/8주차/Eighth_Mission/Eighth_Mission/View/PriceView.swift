@@ -27,6 +27,7 @@ struct PriceView: View {
                     if item != selection {
                         viewModel.totalMoney += item.price
                         viewModel.totalMoney -= selection?.price ?? 0
+                        viewModel.itemSize = item
                         selection = item
                     }
                 }

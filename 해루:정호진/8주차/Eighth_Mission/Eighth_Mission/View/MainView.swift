@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct MainView: View {
-    @StateObject var viewModel = ViewModel()
+    @ObservedObject var viewModel = ViewModel()
     
     var body: some View {
         NavigationStack{
@@ -33,8 +33,8 @@ struct MainView: View {
             .listStyle(.plain)
             
             ZStack(alignment: .bottom) {
-                NavigationLink(destination: CartView(options: viewModel.optionList, 
-                                                     price: viewModel.itemSize,
+                NavigationLink(destination: CartView(options: $viewModel.checkOptions,
+                                                     price: viewModel.itemSize ?? Price(size: "0", price: 0),
                                                      total: viewModel.totalMoney + (viewModel.itemSize?.price ?? 0)), label: {
                     HStack{
                         if viewModel.totalMoney + (viewModel.itemSize?.price ?? 0) != 0 {
@@ -57,7 +57,7 @@ extension MainView {
         Color.gray
     }
     
- 
+    
 }
 
 #Preview {
