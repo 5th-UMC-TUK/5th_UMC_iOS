@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		350320A62B1F253C002A8DEE /* Introduction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 350320A52B1F253C002A8DEE /* Introduction.swift */; };
+		350320AA2B1F4592002A8DEE /* SecondIntroduction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 350320A92B1F4592002A8DEE /* SecondIntroduction.swift */; };
 		3B2476672B034541006D8E6E /* StudyMissionApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2476662B034541006D8E6E /* StudyMissionApp.swift */; };
 		3B2476692B034541006D8E6E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2476682B034541006D8E6E /* ContentView.swift */; };
 		3B24766B2B034542006D8E6E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B24766A2B034542006D8E6E /* Assets.xcassets */; };
@@ -39,6 +41,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		350320A52B1F253C002A8DEE /* Introduction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Introduction.swift; sourceTree = "<group>"; };
+		350320A92B1F4592002A8DEE /* SecondIntroduction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondIntroduction.swift; sourceTree = "<group>"; };
 		3B2476632B034541006D8E6E /* StudyMission.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StudyMission.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B2476662B034541006D8E6E /* StudyMissionApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyMissionApp.swift; sourceTree = "<group>"; };
 		3B2476682B034541006D8E6E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -155,6 +159,8 @@
 			isa = PBXGroup;
 			children = (
 				3B2476922B03461C006D8E6E /* SecondView.swift */,
+				350320A52B1F253C002A8DEE /* Introduction.swift */,
+				350320A92B1F4592002A8DEE /* SecondIntroduction.swift */,
 			);
 			name = "희";
 			path = "희";
@@ -319,11 +325,13 @@
 			files = (
 				3B2476692B034541006D8E6E /* ContentView.swift in Sources */,
 				3B2476952B034626006D8E6E /* ThirdView.swift in Sources */,
+				350320AA2B1F4592002A8DEE /* SecondIntroduction.swift in Sources */,
 				3B2476912B034575006D8E6E /* FirstView.swift in Sources */,
 				3B2476932B03461C006D8E6E /* SecondView.swift in Sources */,
 				3B2476972B034658006D8E6E /* FourthView.swift in Sources */,
 				3B2476992B03466B006D8E6E /* FifthView.swift in Sources */,
 				3B2476672B034541006D8E6E /* StudyMissionApp.swift in Sources */,
+				350320A62B1F253C002A8DEE /* Introduction.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
