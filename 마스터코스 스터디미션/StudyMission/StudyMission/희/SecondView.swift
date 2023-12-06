@@ -29,8 +29,8 @@ struct Name {
 }
 
 enum TapInfo: String, CaseIterable {
-    case player1 = "Heung-Min Son"
-    case player2 = "Kang-In Lee"
+    case player1 = "Favorite Players"
+    case player2 = "Table"
 }
 
 struct SecondView: View {
@@ -74,7 +74,7 @@ struct SecondView: View {
                 
                 ScrollView {
                     
-                    Text("Favorite Players")
+                    Text("FotMob")
                         .font(.title)
                         .bold()
                         .foregroundColor(.white)
@@ -88,7 +88,8 @@ struct SecondView: View {
                         case .player1:
                             Introduction()
                         case .player2:
-                            SecondIntroduction()
+                            Champs()
+                                .frame(height: UIScreen.main.bounds.height*0.8)
 //                            // Your Players content
 //                            ForEach(players, id: \.player1) { player in
 //                                Text(player.player1)

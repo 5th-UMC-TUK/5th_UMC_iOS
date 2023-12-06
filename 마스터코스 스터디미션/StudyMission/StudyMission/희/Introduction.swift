@@ -26,6 +26,8 @@ struct Introduction: View {
         ]
     ]
     
+    
+    
     var body: some View {
         ZStack {
             Color.black.edgesIgnoringSafeArea(.all)
@@ -59,6 +61,34 @@ struct Introduction: View {
                 .padding(.horizontal)
                 .padding(.top, 30)
                 
+                // 선수 소개
+                HStack {
+                    Image("Kang")
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .frame(width: 100, height: 100) // 이미지 크기 조절
+                    
+                    VStack(alignment: .leading) {
+                        Text("Kang-In Lee")
+                            .font(.title)
+                            .bold()
+                            .foregroundColor(.white)
+                            .padding(.bottom, 5)
+                        
+                        HStack {
+                            Image("psg")
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .frame(width: 20, height: 20) // 이미지 크기 조절
+                            
+                            Text("Paris Saint-Germain")
+                                .foregroundColor(.gray)
+                        }
+                    }
+                }
+                .padding(.horizontal) // 좌우 여백 추가
+                .padding(.top, 30)
+                
                 // 경력 정보
                 ForEach(playerCareerData.indices, id: \.self) { sectionIndex in
                     Section(header: Text("Section \(sectionIndex + 1)")) {
@@ -77,9 +107,37 @@ struct Introduction: View {
                     .padding(.vertical, 10)
                     .foregroundColor(.white)
                 }
+                
+                // 경력 정보2
+                ForEach(playerCareerData.indices, id: \.self) { sectionIndex in
+                    Section(header: Text("Section \(sectionIndex + 1)")) {
+                        ForEach(playerCareerData[sectionIndex]) { careerItem in
+                            HStack {
+                                VStack(alignment: .leading) {
+                                    Text("Team: \(careerItem.team)")
+                                    Text("League: \(careerItem.league)")
+                                    Text("Season: \(careerItem.season)")
+                                }
+                                .foregroundColor(.white)
+                                Spacer()
+                            }
+                        }
+                    }
+                    .padding(.vertical, 10)
+                    .foregroundColor(.white)
+                }
+                
+                
+             
+                
+                //선수 정보
+                Section{
+                    
+                }
+                
             }
         }
-        .navigationTitle("Player Career")
+        
     }
 }
 
